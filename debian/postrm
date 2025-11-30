@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Clean up on package removal
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+  # Remove config files
+  rm -f /etc/pipewire/pipewire.conf.d/10-t2_161_*.conf
+  
+  # Remove FIR files (model-specific directories)
+  if [ -d /usr/share/pipewire/devices ]; then
+    rm -rf /usr/share/pipewire/devices/MacBook* 2>/dev/null || true
+  fi
+fi
+
+# dpkg maintainer script policy is to always exit 0
+exit 0
+
