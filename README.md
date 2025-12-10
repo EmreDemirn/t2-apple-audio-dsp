@@ -59,3 +59,5 @@ This project has been create to share the settings with [T2 kernel team](https:/
 Dont expect performance as macOS this just increases the speaker quality just a little 
 
 Thanks
+
+For the Debian and nixOS you have to make it yourself
