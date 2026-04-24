@@ -5,7 +5,7 @@
 echo "Install Macbook Pro 16,2 speakers DSP config as root"
 echo "Copying 40-apple-dsp-speakers.conf to /etc/pipewire/pipewire.conf.d"
 sudo mkdir -p /etc/pipewire/pipewire.conf.d
-sudo cp  config/40-apple-dsp-speakers.conf /etc/pipewire/pipewire.conf.d
+sudo cp  config/* /etc/pipewire/pipewire.conf.d
 echo "Copying firs/*.wav to /usr/share/pipewire/devices/apple"
 sudo mkdir -p /usr/share/pipewire/devices/apple
 sudo cp firs/*.wav /usr/share/pipewire/devices/apple
