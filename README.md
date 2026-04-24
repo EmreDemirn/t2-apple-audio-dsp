@@ -19,7 +19,7 @@ Install the following dependecies:
 ```sh
 sudo pacman -Syu
 sudo pacman -S pipewire pipewire-audio pipewire-pulse pipewire-jack libpipewirev
-sudo pacman -S wireplumber lsp-plugins swh-plugins
+sudo pacman -S wireplumber lsp-plugins swh-plugins calf
 ```
 
 Clone the git branch and install the FIRs config:
